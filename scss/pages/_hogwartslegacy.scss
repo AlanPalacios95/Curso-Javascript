@@ -1,0 +1,86 @@
+.hogwartslegacy__body {
+    display: grid;
+    grid-template-areas: "header header header" ". main aside" ". main aside" ". footer . ";
+    grid-template-rows: auto 46rem auto 11rem;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: center;
+}
+
+.hogwarts__main {
+    grid-area: main;
+    background-color: #e0e0e0;
+    display: flex;
+    font-family: "Cabin", sans-serif;
+    flex-flow: column nowrap;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.hogwarts__legacy__titulo {
+    font-size: 3rem;
+    font-family: "Harry Potter", sans-serif;
+}
+
+.hogwarts__legacy {
+    font-size: 2rem;
+    font-family: "Harry Potter", sans-serif;
+    padding-right: 2px;
+}
+
+.hogwarts__footer {
+    background: linear-gradient(0deg, rgb(13, 42, 40) 0%, rgb(13, 40, 38) 10%);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+}
+
+@include tablet {
+    .hogwartslegacy__body {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main aside"
+            "main aside"
+            "footer footer ";
+        grid-template-rows: auto 80rem;
+        grid-template-columns: 70% 30%;
+        justify-content: center;
+    }
+}
+
+@include movil {
+    .hogwartslegacy__body {
+        display: grid;
+        grid-template-areas: "main" "main" "aside" "footer";
+        grid-template-rows: 4.7rem;
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+
+
+    .aside {
+        height: 100%;
+    }
+
+    .aside__content {
+        flex-direction: row;
+    }
+
+    .aside__titulo {
+        font-size: 2rem;
+    }
+
+    .aside__ul {
+        font-size: 0.9rem;
+    }
+
+    .aside__portada {
+        margin-bottom: 0;
+    }
+
+    .tienda__h3 {
+        font-size: 2rem;
+    }
+}
+

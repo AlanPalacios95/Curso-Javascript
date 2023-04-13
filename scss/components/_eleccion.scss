@@ -1,0 +1,59 @@
+.eleccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+
+    &__titulo {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    &__body {
+        display: flex;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    &__content {
+        border: 1px solid black;
+        border-radius: 2px;
+        display: flex;
+        flex: 1;
+        transition: 0.5s;
+    }
+
+    &__img {
+        transition: 0.5%;
+        width: 100%;
+        height: 35rem;
+        object-fit: cover;
+    }
+
+    &__div {
+        position: relative;
+        display: inline-block;
+    }
+
+    &__descripcion {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    &__descripcion:hover {
+        opacity: 1;
+    }
+
+    &__content:hover {
+        flex: 3;
+    }
+}

@@ -1,0 +1,52 @@
+.mi-cuenta__titulo {
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Cabin", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 900;
+    text-shadow: -3px 5px 2px white;
+    padding: 1rem 0;
+}
+
+.mi-cuenta__registro {
+    background-color: aliceblue;
+    width: 33rem;
+    height: 23rem;
+    margin: 2rem auto;
+    border: 2px solid black;
+    box-shadow: 0 5px 10px 3px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mi-cuenta__fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+input {
+    color: black;
+    border: none;
+    background-color: aliceblue;
+    border-bottom: 2px solid #14362e;
+}
+
+label {
+    text-align: center;
+    cursor: pointer;
+}
+
+@include movil {
+
+    .mi-cuenta__titulo {
+        font-size: 3rem;
+    }
+
+    .mi-cuenta__registro {
+        width: 18rem;
+    }
+
+}

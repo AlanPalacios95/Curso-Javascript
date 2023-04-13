@@ -1,0 +1,72 @@
+.main__sobre-nosotros {
+    background-color: #e0e0e0;
+    padding-bottom: 2rem;
+}
+
+.main__h1 {
+    font-family: oswalt;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.main__img {
+    width: 100%;
+    object-fit: cover;
+    padding: 0 1rem;
+}
+
+.main__descripcion {
+    margin-top: 2rem;
+    font-size: rem;
+    padding: 0 1rem;
+}
+
+.main__p {
+    padding: 2rem;
+}
+
+.equipo {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.equipo__img {
+    width: 25%;
+    height: 10rem;
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+.equipo__integrantes {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+@include movil {
+    .main__h1 {
+        font-size: 2.5rem;
+        padding-top: 1rem;
+    }
+
+    .main__img {
+        height: 13rem;
+    }
+
+
+
+    .equipo__integrantes {
+        flex-direction: column;
+    }
+
+    .equipo__img {
+        width: 50%;
+    }
+
+    .equipo__p {
+        padding: 0 1rem;
+    }
+
+}

@@ -1,0 +1,14 @@
+.atomic-heart__video {
+    width: 100%;
+    height: 23rem;
+    padding: 1rem;
+}
+
+@include movil {
+    .atomic-heart__video {
+        width: 100%;
+        height: 23rem;
+        padding: 1rem;
+    }
+}
+

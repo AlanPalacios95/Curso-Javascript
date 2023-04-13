@@ -1,0 +1,314 @@
+.articulo1 {
+    padding: 2rem;
+    font-weight: 400;
+
+    &__section1 {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    &__titulo {
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    &__img {
+        width: 100%;
+        padding: 0 1rem;
+        object-fit: fill;
+    }
+
+    &__p {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 400;
+    }
+}
+
+.articulo2 {
+    font-size: 1.5rem;
+    padding: 0 10%;
+    font-weight: 400;
+
+    &__section1 {
+        padding: 1rem 0;
+    }
+
+    &__section2 {
+        display: flex;
+        flex-flow: row nowrap;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    &-section2__contenido {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-section2__img {
+        height: 13rem;
+        width: 13rem;
+        display: flex;
+        object-fit: fill;
+    }
+
+    &-section2__descripcion {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &__nota2 {
+        font-size: 1.5rem;
+        margin: 0 10%;
+    }
+}
+
+.articulo3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 2rem 10%;
+
+    &__h4 {
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: row;
+        column-gap: 0.5rem;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 6px;
+        border: 1px solid black;
+        box-shadow: 0 2px 12.5px;
+        padding-bottom: 2rem;
+        height: 20rem
+    }
+
+    &-content__h4 {
+        text-align: center;
+    }
+
+    &-content__img {
+        width: 100%;
+        height: 129px;
+        object-fit: fill;
+    }
+
+    &-content__p {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 400;
+    }
+}
+
+.articulo4 {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+
+    &__section1 {
+        font-size: 1.5;
+        margin: 0 10%;
+    }
+
+    &__section2 {
+        display: flex;
+        flex-flow: row nowrap;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        padding-left: 6rem;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    &-section2__content {
+        font-size: 1.5rem;
+        margin: 0 10%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+
+    &-section2__img {
+        height: 13rem;
+        width: 13rem;
+        margin-left: 0.5rem;
+        object-fit: fill;
+    }
+
+    &-section2__descripcion {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 400;
+    }
+}
+
+.articulo5 {
+    font-size: 1.5rem;
+    margin: 0 10%;
+    border: 3px solid #5E9784;
+    border-style: solid;
+    padding: 0.5rem;
+
+    &__section {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    &__titulo {
+        font-size: 3rem;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: 700;
+    }
+}
+
+@include tablet {
+    .articulo1__titulo {
+        font-size: $tablet-font-title;
+        font-family: "Harry Potter", sans-serif;
+    }
+
+    .articulo1__img {
+        height: 14rem;
+        width: 22rem;
+
+    }
+
+    .articulo1__p {
+        font-size: $tablet-descripcion;
+    }
+
+    .articulo2 {
+        font-size: $tablet-font;
+    }
+
+    .articulo2__section2 {
+        flex-direction: column;
+    }
+
+    .articulo2-section2__descripcion {
+        font-size: $tablet-descripcion;
+    }
+
+    .articulo2__nota2 {
+        font-size: $tablet-font;
+        margin: 0;
+    }
+
+    .articulo3__body {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .articulo4 {
+        font-size: $tablet-font;
+    }
+
+    .articulo4__section2-descripcion {
+        font-size: $tablet-descripcion;
+    }
+
+    .articulo4__section2 {
+        flex-direction: column;
+        font-size: $tablet-font;
+        padding: 1rem;
+    }
+
+    .articulo5 {
+        font-size: $tablet-font;
+        margin: 0.5rem;
+    }
+
+    .articulo5__titulo {
+        font-size: $tablet-font-title;
+    }
+
+    .eleccion__titulo {
+        font-size: $tablet-font-title;
+    }
+}
+
+@include movil {
+    .articulo1__titulo {
+        font-size: $tablet-font-title;
+        font-family: "Harry Potter", sans-serif;
+    }
+
+    .articulo1__img {
+        height: 14rem;
+        width: 100%;
+
+    }
+
+    .articulo1__p {
+        font-size: $tablet-descripcion;
+    }
+
+    .articulo2 {
+        font-size: $tablet-font;
+    }
+
+    .articulo2__section2 {
+        flex-direction: column;
+    }
+
+    .articulo2-section2__descripcion {
+        font-size: $tablet-descripcion;
+    }
+
+    .articulo2__nota2 {
+        font-size: $tablet-font;
+        margin: 0;
+    }
+
+    .articulo3__body {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .articulo4 {
+        font-size: $tablet-font;
+    }
+
+    .articulo4__section2-descripcion {
+        font-size: $tablet-descripcion;
+    }
+
+    .articulo4__section2 {
+        flex-direction: column;
+        font-size: $tablet-font;
+        padding: 1rem;
+    }
+
+    .articulo5 {
+        font-size: $tablet-font;
+        margin: 0.5rem;
+    }
+
+    .articulo5__titulo {
+        font-size: $tablet-font-title;
+    }
+
+    .eleccion__titulo {
+        font-size: $tablet-font-title;
+    }
+}

@@ -1,0 +1,18 @@
+@import "./abstracts/_mixins.scss";
+@import "./abstracts/variables";
+@import "./base/_reset";
+@import "./components/_notas";
+@import "./components/animaciones";
+@import "./components/_buttons.scss";
+@import "./components/_eleccion.scss";
+@import "./layout/_nav";
+@import "./layout/_aside.scss";
+@import "./layout/_footer";
+@import "./pages/_index";
+
+
+header {
+    grid-area: header;
+}
+
+
