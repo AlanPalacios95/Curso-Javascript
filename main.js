@@ -26,10 +26,13 @@ const requisitos = () => {
     while (true) {
         edad = parseInt(prompt("Por favor, escriba su edad para corroborar que sos mayor de 18 años"));
 
-        if (edad < 18) {
-            let confirmacion = prompt(`Lo siento, pero con ${edad} eres menor, no pueder realizar una compra. Por favor para seguir llama a un mayor. ¿Estás con un mayor? (si o no)`);
+        if (isNaN(edad) || edad < 18) {
+            let confirmacion = prompt(`Lo siento, pero con ${edad} eres menor, no puedes realizar una compra. Por favor para seguir llama a un mayor. ¿Estás con un mayor? (si o no)`);
 
             if (confirmacion.toLowerCase() === "si") {
+                break;
+            } else if (confirmacion.toLowerCase() === "no") {
+                alert("Por favor, llama a un mayor para continuar.");
                 break;
             } else {
                 continue;
@@ -65,6 +68,7 @@ const plataforma = () => {
                 break;
 
             case "":
+                alert("Por favor, escribe tu plataforma favorita");
                 continue;
 
             default:
