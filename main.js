@@ -23,12 +23,17 @@ const saludo = () => {
 const requisitos = () => {
     let edad;
 
-    for (; ;) {
+    while (true) {
         edad = parseInt(prompt("Por favor, escriba su edad para corroborar que sos mayor de 18 años"));
 
         if (edad < 18) {
-            alert(`Lo siento, pero con ${edad} eres muy joven para realizar una compra, te sugiero que antes de comprar pidas la autorizacion a tus padres`);
-            break;
+            let confirmacion = prompt(`Lo siento, pero con ${edad} eres menor, no pueder realizar una compra. Por favor para seguir llama a un mayor. ¿Estás con un mayor? (si o no)`);
+
+            if (confirmacion.toLowerCase() === "si") {
+                break;
+            } else {
+                continue;
+            }
         } else if (edad >= 18) {
             alert(`Genial, te sugiero que revises la categoria de promociones :)`);
             break;
